@@ -1,26 +1,68 @@
-Scale and Load Balance
-AIM
-   Create an AMI for Auto Scaling.
-   Create a Load Balancer.
-   Create a Launch Template and an Auto Scaling Group.
-   Verify that Load Balancing is Working.
-   Test Auto Scaling.
-   Terminate Web Server 1.
+# Scale and Load Balance Your Architecture
 
-PROBLEM STATEMENT
-Explain about the Experiment.
-ALGORITHM
-Steps 1:
-Steps 2:
-Steps 3:
-Steps 4:
-Steps 5:
-COMMANDS
-Include the commands used in the Experime
+# Name : E.pavithra
+# Register Number : 212224220072
 
-OUTPUT
-REG NUMBER:
-NAME:
-Include your Screenshots Here.
 
-RESULT
+## Objective
+The objective of this lab is to understand how to design a scalable and highly available architecture on AWS using Auto Scaling and Elastic Load Balancing. This experiment focuses on distributing incoming traffic across multiple EC2 instances, automatically scaling resources based on demand, and validating fault tolerance.
+
+## Prerequisites
+
+* Basic knowledge of Amazon EC2 and VPC
+* Completion of previous labs (IAM, EC2, EBS, Database Server)
+* AWS Academy Lab access
+* Stable internet connection
+
+## Tools Used
+
+* AWS Management Console
+* Amazon EC2
+* Elastic Load Balancer (ELB / ALB)
+* Auto Scaling Groups (ASG)
+* Amazon CloudWatch
+
+## Tasks Performed
+
+### Task 1: Review Existing Architecture
+
+Students review the existing EC2-based application architecture created in previous experiments.
+
+### Task 2: Create a Launch Template
+
+Students create a launch template that defines the EC2 instance configuration including AMI, instance type, security group, and user data.
+
+### Task 3: Create an Auto Scaling Group
+
+Students create an Auto Scaling Group using the launch template and configure minimum, maximum, and desired instance capacity.
+
+### Task 4: Configure an Application Load Balancer
+
+Students create an Application Load Balancer and configure target groups for routing traffic to EC2 instances.
+
+### Task 5: Register Auto Scaling Group with Load Balancer
+
+Students attach the Auto Scaling Group to the target group of the load balancer.
+
+### Task 6: Configure Scaling Policies
+
+Students configure scaling policies based on CPU utilization using Amazon CloudWatch alarms.
+
+### Task 7: Test Load Balancing and Scaling
+
+Students test the setup by generating traffic and observing automatic scaling and load distribution.
+
+## Output Screenshots 
+
+<img width="1600" height="765" alt="WhatsApp Image 2026-05-26 at 10 26 06 PM" src="https://github.com/user-attachments/assets/0008eabc-7afe-47e8-bad8-584fc117f2c3" />
+<img width="1600" height="850" alt="WhatsApp Image 2026-05-26 at 10 26 07 PM" src="https://github.com/user-attachments/assets/ba1879b0-b48a-4e2a-b79a-cc9f43a3e1e7" />
+<img width="1600" height="851" alt="WhatsApp Image 2026-05-26 at 10 26 08 PM" src="https://github.com/user-attachments/assets/7d5322bd-a593-4df5-8e4d-4ccbe5f258e5" />
+<img width="1600" height="807" alt="WhatsApp Image 2026-05-26 at 10 26 08 PM (1)" src="https://github.com/user-attachments/assets/5a7a66e4-bf83-4640-9b93-c39f7d584375" />
+<img width="1600" height="860" alt="WhatsApp Image 2026-05-26 at 10 26 08 PM (2)" src="https://github.com/user-attachments/assets/b734a658-2604-400a-a96e-287b37d7a41e" />
+<img width="1600" height="860" alt="WhatsApp Image 2026-05-26 at 10 26 08 PM (2)" src="https://github.com/user-attachments/assets/b6c058da-818d-4fe5-b296-e9a1a8a322a8" />
+<img width="1600" height="858" alt="WhatsApp Image 2026-05-26 at 10 26 10 PM (1)" src="https://github.com/user-attachments/assets/d67a357d-2029-4682-9f79-357a0a4ccca8" />
+
+
+## Result
+
+This experiment demonstrated how to build a scalable and fault-tolerant cloud architecture using Auto Scaling Groups and Elastic Load Balancing. The system automatically adjusted resources based on workload and ensured continuous service availability by distributing traffic across multiple instances.
